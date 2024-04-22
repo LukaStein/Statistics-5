@@ -1,0 +1,55 @@
+les 2: Gastcollege Marc Bonden / Patrick Deelen (27 mei)
+
+les 3: Project (?)
+
+# Les 1 : Introductie GWAS (Genome-Wide association studies)
+
+Is a observational study of a genome-wide set of genetic variants in different individuals to see if any variant is associated with a trait.
+
+Welke veranderingen in het genoom zie ik bij mensen met een bepaald ziektebeeld. Waar je de kans meer dan random tegenkomt.
+
+Je kijkt naar een populatie en welke genen zijn betrokken bij een ziekte.
+
+Dit kan op twee manieren
+
+1.  Phenotype first approach
+
+    Populatie mensen, deze groep heeft ALS of parkinson en naar deze subset kijk je alleen. En dan kijken we welke genen/varianten (SNPs=kleine mutaties) horen daarbij. Verandering in het genomen ten opzichte van het referentie genoom.
+
+2.  Genotype first approach
+
+    De omgekeerde kant. Je kijkt naar varianten en kijkt vervolgens wat voor fenotypen daarbij horen.
+
+Fenotype first approach is makkelijker, want je kan van fenotype makkelijker een oorzaak afleiden. Al weet je het resultaat al, dan resulteerd dat in bias.
+
+Significantly enriched
+
+Een SNP is significantly enriched, wanneer deze veel meer voorkomt. Een statistische toets bepaald het limiet waarin hoeveel 'veel' betekent.
+
+Als je uit een experiment allemaal uitgeschakelde genen krijgt en geef je die aan je GO terms. Dan is er meer kans dat die bij een proces/path way horen. En zijn die genen dus significantly enriched.
+
+Signficantie kan met een manhatten plot gevisualiseerd worden, met x-as genen en y-as associatie levels (p-waarden).
+
+-   GWA studies identify SNPs and other variants in DNA associated with a disease, but they cannot on their own specify which genes are causal
+
+-   The odds ratio is the ratio of two odds, which in the context of GWA studies are the odds of case
+
+In een non-coding region kan een SNP meestal niet veel doen. Behalve in een promotor of enhancer gebied. Een verandering in een promotor gebied noemen we cis-mutatie (dichtbij). Daartegenover staat een trans-mutatie= een verre mutatie.
+
+Omdat dat gen veranderd is ben jij ziek. Is erg lastig om aan te tonen. Maar je kan niet een causale (oorzakelijk) verband letterlijk aantonen, maar wel zeggen hij is geassocieerd met.
+
+SNP kan werkelijk iets doen of het maakt niet zo veel uit.
+
+## Expression Quantitative Trait Locus (eQTL)
+
+-   Expression quantitative trait loci are genomic loci (eQTL) that explain variation in expression levels of mRNAs. Een plek/locus op een chromosoom die verklaard de verandering in expressie.
+
+-   Chromosomal loci that explain variance in expression traits (eQTL).
+
+### Hardy-Weinberg equilibrium
+
+Is een populatie aan het veranderen of niet. Zijn ze aan het aanpassen aan de omgeving? Anders zijn de allel en genotype frequenties constant.
+
+Maar het gaat hier natuurlijk over allel frequenties. Een frequentie van een mutatie is een populatie, zegt iets over een ziektebeeld.
+
+Het nuttige van hardy-weinberg is dus dat je een constante populatie kan gebruiken als basis om veranderingen in een evoluerende populatie te berekenen.

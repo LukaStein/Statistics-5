@@ -53,3 +53,77 @@ Is een populatie aan het veranderen of niet. Zijn ze aan het aanpassen aan de om
 Maar het gaat hier natuurlijk over allel frequenties. Een frequentie van een mutatie is een populatie, zegt iets over een ziektebeeld.
 
 Het nuttige van hardy-weinberg is dus dat je een constante populatie kan gebruiken als basis om veranderingen in een evoluerende populatie te berekenen.
+
+## The chi-square statistics
+
+-   We hebben een verwachte frequentie en een geobserveerde frequentie. Zijn deze aantallen anders dan elkaar?
+
+-   Each o represents an observed frequency and each e represents the corresponding expected frequency
+
+-   Is there a significant effect of a real surgery on migraine?
+
+    ```{r}
+    chisq.test(matrix(c(41, 15, 8, 11), nrow = 2))
+    ```
+
+Is significant, dus een operatie zou significant bijdragen aan migraine. Dus H1-hypothese.
+
+Fischer exact test is also a test.
+
+## Multiple-testing correction
+
+-   Multiple testing corrections adjust p-values derived from multiple statistical test to correct for occurrence of false positives.
+
+-   Als je op elke SNP zegt o kijk hij is significant. Maar je hebt heel veel SNPs gevonden, dus je vind een SNP dat significant is per toeval. Daarom pas je holm, bonferroni, hochberg toe. Bonferroni zegt oké, je hebt een miljoen keer geprobeerd en vermenigvuldig nu elke p-value met 1 miljoen.
+
+## Odds ratio
+
+-   The odds ratio is the ratio between two betting ratios or odds. The bet ratio is the ratio between the probability than an event occurs (will occur) and the probability that it will not occur (wil occur)
+
+-   Dus de ratio van TP, TN, FP en FN
+
+0.08 dat mensen in een populatie ziek zijn
+
+0.92 gezonden mensen
+
+Wanneer een persoon geïnfecteerd is, geeft de test een kans van positief van 0.95.
+
+Wanneer een persoon niet geïnfecteerd is, zal de test een kans van positief hebben van 0.10.
+
+Wat is de kans dat een willekeurig persoon de test doet en positief zal testen.
+
+0.10 \* 0.95 = 0.095 \* 0.08 = 0.0076 = 0.076% kans dat iemand positief test in een populatie met zieke mensen.
+
+Kijken naar TP en FP
+
+```{r}
+0.076 + 0.092
+```
+
+## Linear regression
+
+Variables with only one values. For example, salery. Rechte lijn door punten. Lijn tussen min en plus oneindigheid.
+
+## Logistic regression (disease)
+
+Ga je stemmen, ja of nee. 0 of 1 voorspellen. Or sick and healthy
+
+Dichotomos variable are variables with only two values.
+
+Kromme lijn tussen min en plus oneindigheid op de x-as, maar tussen 0 en 1 op de y-as.
+
+If there is an influence, then we can predict how likely it's that a person has a disease.
+
+## Polygenic score
+
+-   Polygenic risk scores
+
+## Linkage disequilibirium (LD)
+
+Het voorspellen van een nucleotide positie door te kijken naar kansen in linked genes.
+
+## Minor allele Frequency
+
+-   MAF is the frequency at which the second most common allele occurs in a given population
+
+-   MAF = alleles positive for the variant / total alleles screened
